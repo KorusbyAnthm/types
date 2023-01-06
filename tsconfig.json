@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "outDir": "dist",
+        "sourceMap": true,
+        "declaration": true,
+        "allowJs": true,
+        "moduleResolution": "node",
+        "downlevelIteration": true
+    }
+}
