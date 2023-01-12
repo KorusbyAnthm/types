@@ -16,6 +16,9 @@ export type Service = typeof Services[number];
 export const ContributionTypes = <const>["LYRIC_ADDED", "LYRIC_REMOVED", "LYRIC_UPDATED", "LYRIC_TIMESTAMPED", "LYRIC_KARAOKED", "LYRIC_TRANSLATED"];
 export type ContributionType = typeof ContributionTypes[number];
 
+export const KeyArgs = <const>["C", "D", "E", "F", "G", "A", "B", "b", "#", "MAJOR", "MINOR", "DO", "RE", "MI", "FA", "SOL", "LA", "SI", "MAYOR", "MENOR", "SOSTENIDO"];
+export type KeyArg = typeof KeyArgs[number];
+
 export const Badges = <const>{
     CREATED_ACCOUNT: {
         name: "Account Creation",
@@ -37,33 +40,33 @@ export interface BasePostContentType {
 };
 
 export interface PostContentTypeMap {
-    VIDEO: BasePostContentType &{
+    video: BasePostContentType &{
         src: string;
         size: number;
         md5: string;
         contentType: MimeType;
     };
-    IMAGE: BasePostContentType & {
+    image: BasePostContentType & {
         src: string;
         size: number;
         md5: string;
         contentType: MimeType;
     };
-    SNIPPET: {
+    snippet: {
         src: Schema.Snippet;
     };
-    LYRICS: {
+    lyrics: {
         src: string;
         from: string;
     };
-    SONG: {
+    song: {
         src: string;
         from: number;
         to: number;
         size: number;
         contentType: MimeType;
     };
-    TEXT: {
+    text: {
         src: string;
     };
 };
@@ -153,6 +156,11 @@ export const SelfSafeKeys = {
     ]
 };
 export type SelfSafeKey = {[key in keyof typeof SelfSafeKeys]: typeof SelfSafeKeys[key][number]};
+
+export type LastEdited = {
+    by: string;
+    timestamp: number;
+};
 
 export namespace Schema {
     export interface Notification {
@@ -290,7 +298,7 @@ export namespace Schema {
     export interface Snippet {
         explicit: boolean;
         lang: ISOLanguageCode;
-        keywords: Array<string>;
+        keywords: string[];
         id: string;
         relevance: number;
         data: string;
@@ -299,7 +307,7 @@ export namespace Schema {
         sources: {
             album: string;
             song: string;
-            artists: Array<string>;
+            artists: string[];
             external: {[service in Service]?: string};
             from: number;
             to: number;
@@ -307,6 +315,26 @@ export namespace Schema {
         comments: Comment[];
         likes: Save[];
         favorites: Save[];
+    };
+
+    export interface Song {
+        writtenBy: string[];
+        singers: string[];
+        id: string;
+        about: {
+            duration: number;
+            bpm: number;
+            key: KeyArg[];
+            loudness: number;
+            explicit: boolean;
+            description: string;
+            lastEdited: LastEdited
+        };
+        references: {
+            lastEdited: LastEdited;
+            lyrics: string[];
+            about: string[];
+        };
     };
 
     export namespace Public {

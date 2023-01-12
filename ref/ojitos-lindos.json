@@ -1,0 +1,912 @@
+{
+    "writtenBy": [
+        "00000000000000000000"
+    ],
+    "singers": [
+        "88888888888888888888",
+        "99999999999999999999"
+    ],
+    "timestampCompletion": 1,
+    "song": "00000000000000000000",
+    "about": {
+        "duration": 258000,
+        "bpm": 80,
+        "key": [
+            "D",
+            "#",
+            "MINOR"
+        ],
+        "loudness": -5.75,
+        "explicit": false,
+        "description": "El artista \"Bad Bunny\" tras unas semanas después del lanzamiento del album \"Un Verano Sin Tí\" por medio de un live de Instagram reveló que aunque mucha gente pensaba que la conción \"Ojitos Lindos\" estaba dedicada a una persona en específico pero en realidad estaba dedicada a su perrita beagle \"Sansa\" \"Los ojos más lindos que he visto son los de Sansa, son los más lindos\", expresó Bad Bunny.",
+        "lastEdited": {
+            "by": "00000000000000000000",
+            "timestamp": 1663386858540
+        }
+    },
+    "references": {
+        "lastEdited": {
+            "by": "00000000000000000000",
+            "timestamp": 1663386858540
+        },
+        "lyrics": [
+            "https://www.musixmatch.com/es/letras/Bad-Bunny-Bomba-Est%C3%A9reo/Ojitos-Lindos",
+            "https://genius.com/Bad-bunny-and-bomba-estereo-ojitos-lindos-lyrics"
+        ],
+        "about": [
+            "https://www.eluniversal.com.mx/espectaculos/bad-bunny-revelo-quien-fue-la-inspiracion-detras-de-ojitos-lindos-y-no-no-fue-gabriela",
+            "https://genius.com/Bad-bunny-and-bomba-estereo-ojitos-lindos-lyrics",
+            "https://musicstax.com/track/ojitos-lindos/3k3NWokhRRkEPhCzPmV8TW"
+        ]
+    },
+    "lyrics": {
+        "0": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "annotations": {
+                "VERSE": 0,
+                "SINGER": 0,
+                "INSTRUMENTAL": ""
+            }
+        },
+        "11048": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "translated": {
+                "en-us": {
+                    "lastEdited": {
+                        "by": "00000000000000000000",
+                        "timestamp": 1663386858540
+                    },
+                    "writtenBy": [
+                        "00000000000000000000"
+                    ],
+                    "text": "I haven't listened to my heart for a long time"
+                }
+            },
+            "karaoke": {
+                "original": [
+                    10,
+                    10,
+                    10,
+                    10,
+                    10,
+                    10,
+                    10,
+                    10
+                ],
+                "translated": {
+                    "en-us": [
+                        10,
+                        10,
+                        10,
+                        10,
+                        10,
+                        10,
+                        10,
+                        10
+                    ]
+                }
+            },
+            "text": "Hace mucho tiempo le hago caso al corazón"
+        },
+        "17000": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Y pasan los dia', los mese' pensando en tu olor (-do en tu olor)"
+        },
+        "23038": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Ha llegado el tiempo para usar la razón"
+        },
+        "30000": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Ante' que sea tarde y sin querer me parta en do' (parta en do')"
+        },
+        "34075": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "annotations": {
+                "PART": "PRECHORUS"
+            },
+            "text": "Ante' de que salga el sol y hunda el acelerador"
+        },
+        "38000": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Que vaya sin frenos y pierda el control"
+        },
+        "41000": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Nada ma' seremos do', tú y yo acariciandono'"
+        },
+        "43038": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "En medio del tiempo, sin decir adiós"
+        },
+        "46000": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 1,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "annotations": {
+                "PART": "CHORUS"
+            },
+            "text": "Y solo mírame, con esos ojito' lindo'"
+        },
+        "51038": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Que con eso yo estoy bien"
+        },
+        "55005": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Hoy he vuelto a hacer"
+        },
+        "58005": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "annotations": {
+                "VERSE": 1,
+                "SINGER": 1
+            },
+            "text": "Hace tiempo (tiempo) que no agarro a nadie de la mano (mano)"
+        },
+        "115015": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Hace tiempo (tiempo) que no envio \"buenos días, te amo\" (amo)"
+        },
+        "70001": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "annotations": {
+                "VOICE": "F"
+            }
+        },
+        "70000": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Pero tú me tiene' enreda'o, me envolví"
+        },
+        "73005": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "annotations": {
+                "VOICE": "MF"
+            },
+            "text": "Iba por mi camino y me perdí"
+        },
+        "75009": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Mi mirada cambió cuando tus ojos ví"
+        },
+        "80000": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Bye-bye a lo' culo', ni me despedí"
+        },
+        "82095": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Yo no te busqué, no"
+        },
+        "85048": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Chocamo' en el trayecto"
+        },
+        "88000": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Con tu alma es la que yo conecto"
+        },
+        "91015": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Tranquila, no tiene que ser perfecto, no"
+        },
+        "95001": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "annotations": {
+                "PART": "PRECHORUS"
+            },
+            "text": "Aquí no existe el pecado"
+        },
+        "98002": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Y equivocarse es bonito"
+        },
+        "101015": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Lo' errore' son placere'"
+        },
+        "104000": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "annotations": {
+                "VOICE": "MF"
+            },
+            "text": "Igual que to' tu' besito'"
+        },
+        "106095": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "annotations": {
+                "SINGER": [
+                    0,
+                    1
+                ],
+                "VOICE": "F"
+            },
+            "text": "Y solo mírame, con esos ojito' lindo'"
+        },
+        "111001": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "annotations": {
+                "SINGER": 0
+            },
+            "text": "Que con eso yo estoy bien"
+        },
+        "115000": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Hoy he vuelto a nacer"
+        },
+        "118001": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Y solo mírame, con esos ojito' lindo'"
+        },
+        "123000": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Que con eso yo estoy bien"
+        },
+        "126068": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Hoy he vuelto a nacer"
+        },
+        "131001": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "annotations": {
+                "VERSE": 2,
+                "SINGER": [
+                    0,
+                    1
+                ],
+                "VOICE": "P"
+            },
+            "text": "Tú y yo, tú y yo, tú y yo (tú y yo, tú y yo)"
+        },
+        "137055": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Tú y yo, tú y yo (tú y yo, tú y yo), tú y yo"
+        },
+        "144000": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "annotations": {
+                "INSTRUMENTAL": ""
+            }
+        },
+        "147025": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "annotations": {
+                "SINGER": 1
+            },
+            "text": "Tú y yo, tú y yo"
+        },
+        "151066": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Tú y yo, tú y yo"
+        },
+        "154025": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "annotations": {
+                "VOICE": "F"
+            },
+            "text": "Yo no me dejo llevar de nadie"
+        },
+        "156000": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Yo solo me dejo llevar de tu sonrisa"
+        },
+        "159075": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "annotations": {
+                "VOICE": "MF"
+            },
+            "text": "Y del lunar cerquita de tu boca"
+        },
+        "162009": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Si yo estoy loco, tú estás loquita"
+        },
+        "166025": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Pero, baby, como tú no hay otra, no"
+        },
+        "170001": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Quiero regalarte girasole'"
+        },
+        "172000": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Ir pa' la playa y buscarte caracole'"
+        },
+        "175009": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Cuando estoy contigo, yo no miro el Rolex"
+        },
+        "178076": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Vamo' a bailar 200 cancione'"
+        },
+        "181001": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Nadie me pone como tu me pone'"
+        },
+        "185015": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Mmh, hm-hm, hm-hm"
+        },
+        "188015": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Mmh, hm-hm, hm-hm"
+        },
+        "191015": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "annotations": {
+                "VERSE": 3,
+                "VOICE": "MP"
+            },
+            "text": "Yo le hablo a Dio' y tú ere' su respuesta"
+        },
+        "193005": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Aprendí que lo' momento' lindo' nunca cuestan"
+        },
+        "197000": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Como cuando me regala' tu mirada"
+        },
+        "199009": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Y el sol su puesta (ey, ey), y el sol su puesta"
+        },
+        "203001": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "annotations": {
+                "VOICE": "F",
+                "PART": "PRECHORUS"
+            },
+            "text": "Cuando estoy encima de ti, de ti"
+        },
+        "206001": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Mami yo me olvido de to', de to'"
+        },
+        "209000": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "No hace falta nadie aquí"
+        },
+        "91009": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Solamente tú y yo"
+        },
+        "215000": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "annotations": {
+                "VERSE": 4,
+                "SINGER": 0,
+                "PART": "PRECHORUS",
+                "VOICE": "MF"
+            },
+            "text": "Antes de que salga el sol y hunda el acelerador"
+        },
+        "218000": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Que vaya sin frenos y pierda el control"
+        },
+        "221025": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Nada más seremos do', tú y yo acariciandono'"
+        },
+        "224033": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "En medio del tiempo, sin decir adiós"
+        },
+        "226001": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "annotations": {
+                "PART": "CHORUS"
+            },
+            "text": "Y solo mírame, con esos ojito' lindo'"
+        },
+        "231000": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Que con eso yo estoy bien"
+        },
+        "235033": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Hoy he vuelto a nacer"
+        },
+        "238042": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Y solo mírame con esos ojito' lindo'"
+        },
+        "243000": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Que con eso yo estoy bien"
+        },
+        "246055": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "text": "Hoy he vuelto a nacer"
+        },
+        "251000": {
+            "lastEdited": {
+                "by": "00000000000000000000",
+                "timestamp": 1663386858540
+            },
+            "emphasis": 0,
+            "writtenBy": [
+                "00000000000000000000"
+            ],
+            "annotations": {
+                "INSTRUMENTAL": ""
+            }
+        }
+    }
+}
