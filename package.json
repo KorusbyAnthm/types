@@ -1,10 +1,10 @@
 {
   "name": "@korusbyanthm/types",
-  "version": "1.1.0",
+  "version": "1.11.0",
   "description": "Type definitions for the Korus API",
   "main": "dist/index.js",
   "scripts": {
-    "publish": "ts-node src/makeConstant.ts && tsc && npm publish"
+    "up": "ts-node src/scripts/makeConstant.ts && tsc && npm publish"
   },
   "keywords": [
     "korus",
@@ -15,6 +15,7 @@
   "license": "UNLICENSED",
   "dependencies": {
     "country-data": "^0.0.31",
+    "firebase-admin": "^11.5.0",
     "mime-db": "^1.52.0"
   },
   "devDependencies": {

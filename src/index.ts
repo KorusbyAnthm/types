@@ -1,16 +1,18 @@
-import { CountryData } from './data/countryData';
-import mimeDb from "mime-db/db.json";
+// TODO: Split into different files
+// please, i can't manage this.
 
-export const MimeTypes = Object.keys(mimeDb) as MimeType[];
-export type MimeType = keyof typeof mimeDb;
+import firebase from "firebase-admin";
 
-export const ISOLanguageCodes = [...CountryData].map(country => country.languages).flat();
-export type ISOLanguageCode = typeof ISOLanguageCodes[number];
+import { ISOCountryCode, ISOLanguageCode, ISOCountryCodes, ISOLanguageCodes } from './CountryData';
+export { ISOCountryCode, ISOLanguageCode, ISOCountryCodes, ISOLanguageCodes };
 
-export const ISOCountryCodes = [...CountryData].map(country => [country.alpha2, country.alpha3]).flat();
-export type ISOCountryCode = typeof ISOCountryCodes[number];
+import { BadgeMap, BadgeId } from "./Badge";
+export { BadgeMap, BadgeId };
 
-export const Services = <const>["google", "microsoft", "apple", "twitter", "github", "spotify", "youtube"];
+import { PublicSafeKey, PublicSafeKeys, SelfSafeKey, SelfSafeKeys } from "./SafeKeys";
+export { PublicSafeKey, PublicSafeKeys, SelfSafeKey, SelfSafeKeys };
+
+export const Services = <const>["google", "microsoft", "apple", "twitter", "github", "spotify", "youtube", "genius"];
 export type Service = typeof Services[number];
 
 export const ContributionTypes = <const>["LYRIC_ADDED", "LYRIC_REMOVED", "LYRIC_UPDATED", "LYRIC_TIMESTAMPED", "LYRIC_KARAOKED", "LYRIC_TRANSLATED"];
@@ -18,22 +20,6 @@ export type ContributionType = typeof ContributionTypes[number];
 
 export const KeyArgs = <const>["C", "D", "E", "F", "G", "A", "B", "b", "#", "MAJOR", "MINOR", "DO", "RE", "MI", "FA", "SOL", "LA", "SI", "MAYOR", "MENOR", "SOSTENIDO"];
 export type KeyArg = typeof KeyArgs[number];
-
-export const Badges = <const>{
-    CREATED_ACCOUNT: {
-        name: "Account Creation",
-        description: "You created your account!",
-        obtainedBy: "Creating your account",
-        value: 100
-    },
-    CLOSE_LISTENER: {
-        name: "Close Listener",
-        description: "You're a close listener, huh?",
-        obtainedBy: "Making your first contribution to a song's lyrics",
-        value: 200
-    }
-};
-export type BadgeId = keyof typeof Badges;
 
 export interface BasePostContentType {
     description?: string;
@@ -114,53 +100,12 @@ export type HistoryItem = HistoryEventMap[HistoryEvent];
 export const AccountTypes = <const>["artist", "admin", "user", "agency"];
 export type AccountType = typeof AccountTypes[number];
 
-export const PublicSafeKeys = {
-    User: <const>[
-        "id",
-        "username",
-        "relevance",
-        "birthDate",
-        "created",
-        "contributions",
-        "score",
-        "badges",
-        "posts",
-        "bio",
-        "followers",
-        "following"
-    ],
-    Identifier: <const>[
-        "id",
-        "username"
-    ]
-};
-export type PublicSafeKey = {[key in keyof typeof PublicSafeKeys]: typeof PublicSafeKeys[key][number]};
-
-export const SelfSafeKeys = {
-    User: <const>[
-        ...PublicSafeKeys.User,
-        "email",
-        "emailVerified",
-        "phoneNumber",
-        "phoneNumberVerified",
-        "notifications",
-        "links",
-        "likes",
-        "favorites"
-    ],
-    Identifier: <const>[
-        ...PublicSafeKeys.Identifier,
-        "email",
-        "phoneNumber",
-        "history"
-    ]
-};
-export type SelfSafeKey = {[key in keyof typeof SelfSafeKeys]: typeof SelfSafeKeys[key][number]};
-
 export type LastEdited = {
     by: string;
     timestamp: number;
 };
+
+export type AllOpt<T> = {[key in keyof T]?: T[key]};
 
 export namespace Schema {
     export interface Notification {
@@ -293,6 +238,9 @@ export namespace Schema {
                 linksShown?: Service[]
             };
         };
+
+        blockedUsers: string[];
+        restrictedUsers: string[];
     };
 
     export interface Snippet {
@@ -317,24 +265,61 @@ export namespace Schema {
         favorites: Save[];
     };
 
-    export interface Song {
-        writtenBy: string[];
-        singers: string[];
+    export interface Artist<isDb extends boolean = false> extends User {
+        external?: {[service in Service]?: {
+            id?: string;
+            uri?: string;
+            href?: string;
+            url?: string;
+        }};
+        accountType: "artist";
+        claimed: boolean;
+        albums?: (isDb extends true ? firebase.firestore.DocumentReference<Album<isDb>> : Album<isDb>)[];
+    };
+
+    export interface Album<isDb extends boolean = false> {
         id: string;
-        about: {
-            duration: number;
-            bpm: number;
-            key: KeyArg[];
-            loudness: number;
-            explicit: boolean;
-            description: string;
-            lastEdited: LastEdited
+        artists: (isDb extends true ? firebase.firestore.DocumentReference<Artist<isDb>> : Artist<isDb>)[];
+        songs: (isDb extends true ? firebase.firestore.DocumentReference<Song<isDb>> : Song<isDb>)[];
+        external?: {[service in Service]?: {
+            id?: string;
+            uri?: string;
+            href?: string;
+            url?: string;
+        }};
+        images?: {
+            x64?: string;
+            x300?: string;
+            x640?: string;
         };
-        references: {
-            lastEdited: LastEdited;
-            lyrics: string[];
-            about: string[];
+        name: string;
+        release: number;
+        tracks: number;
+        type: "album" | "single" | "compilation";
+    };
+
+    export interface Song<isDb extends boolean = false> {
+        id: string;
+        name: string;
+        duration: number;
+        relevance: number;
+        preview?: string;
+        songNumber?: number;
+        images?: {
+            x64?: string;
+            x300?: string;
+            x640?: string;
         };
+        release?: number;
+        external?: {[service in Service]?: {
+            id?: string;
+            uri?: string;
+            href?: string;
+            url?: string;
+        }};
+        lyrics?: {original?: string} & {[lang in ISOLanguageCode]?: string};
+        artists: (isDb extends true ? firebase.firestore.DocumentReference<Artist<isDb>> : Artist<isDb>)[];
+        album: isDb extends true ? firebase.firestore.DocumentReference<Album<isDb>> : Album<isDb>;
     };
 
     export namespace Public {
@@ -343,5 +328,9 @@ export namespace Schema {
     
     export namespace Self {
         export type User = {[key in SelfSafeKey["User"]]: Schema.User[key]};
+    };
+
+    export namespace Opt {
+        export type User = AllOpt<Schema.User>;
     };
 };

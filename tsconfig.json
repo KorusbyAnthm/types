@@ -7,6 +7,8 @@
         "declaration": true,
         "allowJs": true,
         "moduleResolution": "node",
-        "downlevelIteration": true
+        "downlevelIteration": true,
+        "target": "es2015",
+        "module": "commonjs",
     }
 }

@@ -2,7 +2,7 @@ import countryData from 'country-data/';
 import fs from "node:fs";
 import path from "node:path";
 
-const countryDataPath = path.join(__dirname, "./data/countryData.ts");
+const countryDataPath = path.join(__dirname, "./../data/countryData.ts");
 
 let countryBase = "export const CountryData = <const>";
 
